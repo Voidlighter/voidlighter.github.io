@@ -16,23 +16,24 @@ Original Author: Nickolas Reimschiissel
 			document.addEventListener('readystatechange', event => {
 				if (event.target.readyState === "complete") {
 					// Links to other pages
-					var youtubeLink = "https://www.youtube.com/channel/UC3TS0xIIlZLY87eBUkG5Neg"
-					var facebookLink = "https://fb.me/worldshaperstudios"
-					var patreonLink = "https://patreon.com/worldshaperstudios"
+					let youtubeLink = "https://www.youtube.com/channel/UC92XQx0aFypeKqib0oJV1bA"
+					let twitchLink = "https://www.twitch.tv/cadevoidlighter"
+					let discordLink = "https://discord.gg/DGYU2UnzXS"
+					let patreonLink = "https://www.patreon.com/voidlighter"
 
 					// For each set of anchors (hyperlinks) set the href (link) appropriately
-					var anchors = document.getElementsByTagName('a')
-					for (var i = 0; i < anchors.length; i++) {
-						var anchor = anchors[i]
-						var anchorClasses = anchor.classList
+					let anchors = document.getElementsByTagName('a')
+					for (let i = 0; i < anchors.length; i++) {
+						let anchor = anchors[i]
+						let anchorClasses = anchor.classList
 						if (anchorClasses == null) {
 							continue
 						}
 
 						if (anchorClasses.contains('youtube')) {
 							anchor.href = youtubeLink
-						} else if (anchorClasses.contains('facebook')) {
-							anchor.href = facebookLink
+						} else if (anchorClasses.contains('twitch')) {
+							anchor.href = twitchLink
 						} else if (anchorClasses.contains('patreon')) {
 							anchor.href = patreonLink
 						}
@@ -47,7 +48,7 @@ Original Author: Nickolas Reimschiissel
 <div class="container">
 	<!--Header (Big image)-->
 	<header>
-		<img src="images/WS-FacebookCover_2560x1440.png" alt="Worldshaper Studios" class="header"/>
+		<img src="images/WS-TwitchCover_2560x1440.png" alt="Worldshaper Studios" class="header"/>
 	</header>
 	<!--Description Section-->
 	<div class="description">
@@ -74,12 +75,12 @@ Original Author: Nickolas Reimschiissel
 			<h3>WATCH</h3>
 			<img src="images/mediaIcons/YoutubeCircle.png" alt="YouTube" class="social"/>
 		</span>
-		<span class="social-link rounded" id="facebook">
-			<a href="#" class="facebook" title="Facebook">
+		<span class="social-link rounded" id="twitch">
+			<a href="#" class="twitch" title="Twitch">
 				<span class="link-spanner rounded"></span>
 			</a>
 			<h3>FOLLOW</h3>
-			<img src="images/mediaIcons/FacebookCircle.png" alt="Facebook" class="social" />
+			<img src="images/mediaIcons/TwitchCircle.png" alt="Twitch" class="social" />
 		</span>
 		<span class="social-link rounded" id="patreon">
 			<a href="#" class="patreon" title="Patreon">
@@ -130,7 +131,7 @@ Original Author: Nickolas Reimschiissel
 	<footer>
 		<div class="footer">
 			<p class="footer"><a href="#" class="youtube">Youtube</a></p>
-			<p class="footer"><a href="#" class="facebook">Facebook</a></p>
+			<p class="footer"><a href="#" class="twitch">Twitch</a></p>
 			<p class="footer"><a href="#" class="patreon">Patreon</a></p>
 			<p class="footer">For business inquiries email <a href="mailto:worldshaperstudios@gmail.com"><b>worldshaperstudios@gmail.com</b></a></p>
 			<hr/>
