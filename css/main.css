@@ -127,7 +127,6 @@ b {
 }
 
 h1,h2 {
-	font-family: Economica;
 	text-transform: uppercase;
 	font-weight: normal;
 }
@@ -148,6 +147,7 @@ h2 {
 }
 
 h3 {
+	font-family: Economica;
 	margin: 0;
 	margin-bottom: 10%;
 	font-style: italic;
