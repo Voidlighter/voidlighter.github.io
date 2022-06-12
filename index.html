@@ -11,6 +11,7 @@ Original Author: Nickolas Reimschiissel
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Worldshaper Studios</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo2|Economica">
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" defer>
 			document.addEventListener('readystatechange', event => {
@@ -33,6 +34,8 @@ Original Author: Nickolas Reimschiissel
 						if (anchorClasses.contains('youtube')) {
 							anchor.href = youtubeLink
 						} else if (anchorClasses.contains('twitch')) {
+							anchor.href = twitchLink
+						} else if (anchorClasses.contains('discord')) {
 							anchor.href = twitchLink
 						} else if (anchorClasses.contains('patreon')) {
 							anchor.href = patreonLink

@@ -1,31 +1,11 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: 'MerriweatherSans';
-    src: url('../fonts/Merriweather Sans/MerriweatherSans-Light.eot');
-    src: url('../fonts/Merriweather Sans/MerriweatherSans-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Merriweather Sans/MerriweatherSans-Light.woff2') format('woff2'),
-        url('../fonts/Merriweather Sans/MerriweatherSans-Light.woff') format('woff'),
-        url('../fonts/Merriweather Sans/MerriweatherSans-Light.svg#MerriweatherSans-Regular') format('svg');
-}
-
-@font-face {
-    font-family: 'Itim';
-    src: url('../fonts/Itim/Itim-Regular.eot');
-    src: url('../fonts/Itim/Itim-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Itim/Itim-Regular.woff2') format('woff2'),
-        url('../fonts/Itim/Itim-Regular.woff') format('woff'),
-        url('../fonts/Itim/Itim-Regular.svg#Itim-Regular') format('svg');
-}
-
 * {
 	color: white;
 	text-align: center;
-	font-family: 'MerriweatherSans';
+	font-family: 'Baloo2';
 	font-weight: lighter;
 }
-
-
 
 /*
 Containers
@@ -147,7 +127,7 @@ b {
 }
 
 h1,h2 {
-	font-family: Itim;
+	font-family: Economica;
 	text-transform: uppercase;
 	font-weight: normal;
 }
