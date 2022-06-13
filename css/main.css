@@ -40,7 +40,7 @@ section {
 }
 
 div.description {
-	background-color: none;
+	background-color: rgba(0,0,0,0.5);
 }
 
 div.social {
@@ -58,7 +58,7 @@ span.social-link {
 	max-width: 10%;
 	margin: 0 2%;
 	display: inline-block;
-	background-color: rgba(0,0,0,0.5);
+	background-color: none;
 	padding: 1.5% 2%;
 	object-fit: contain;
 }
