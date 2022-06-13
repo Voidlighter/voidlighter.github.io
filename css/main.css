@@ -139,7 +139,7 @@ b {
 }
 
 h1,h2 {
-	font-family: Economica;
+	font-family: 'Economica';
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -161,7 +161,16 @@ h2 {
 }
 
 h3 {
-	font-family: Economica;
+	font-family: 'Economica';
+	margin: 0;
+	margin-bottom: 10%;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: rgb(57, 62, 110);
+}
+
+h4 {
+	font-family: 'Baloo 2';
 	margin: 0;
 	margin-bottom: 10%;
 	font-weight: bold;
