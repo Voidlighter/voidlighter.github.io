@@ -44,6 +44,7 @@ div.description {
 }
 
 div.social {
+	background-color: rgba(0,0,0,0.5);
 	padding-bottom: 5%;
 }
 
