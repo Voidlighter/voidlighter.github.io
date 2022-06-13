@@ -7,151 +7,129 @@ Original Author: Nickolas Reimschiissel
 -->
 
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Voidlighter</title>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo2|Economica">
-		<link href="css/main.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" defer>
-			document.addEventListener('readystatechange', event => {
-				if (event.target.readyState === "complete") {
-					// Links to other pages
-					let youtubeLink = "https://www.youtube.com/channel/UC92XQx0aFypeKqib0oJV1bA"
-					let twitchLink = "https://www.twitch.tv/cadevoidlighter"
-					let discordLink = "https://discord.gg/DGYU2UnzXS"
-					let patreonLink = "https://www.patreon.com/voidlighter"
 
-					// For each set of anchors (hyperlinks) set the href (link) appropriately
-					let anchors = document.getElementsByTagName('a')
-					for (let i = 0; i < anchors.length; i++) {
-						let anchor = anchors[i]
-						let anchorClasses = anchor.classList
-						if (anchorClasses == null) {
-							continue
-						}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Voidlighter</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo2|Economica">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" defer>
+		document.addEventListener('readystatechange', event => {
+			if (event.target.readyState === "complete") {
+				// Links to other pages
+				let youtubeLink = "https://www.youtube.com/channel/UC92XQx0aFypeKqib0oJV1bA"
+				let twitchLink = "https://www.twitch.tv/cadevoidlighter"
+				let discordLink = "https://discord.gg/DGYU2UnzXS"
+				let patreonLink = "https://www.patreon.com/voidlighter"
 
-						if (anchorClasses.contains('youtube')) {
-							anchor.href = youtubeLink
-						} else if (anchorClasses.contains('twitch')) {
-							anchor.href = twitchLink
-						} else if (anchorClasses.contains('discord')) {
-							anchor.href = discordLink
-						} else if (anchorClasses.contains('patreon')) {
-							anchor.href = patreonLink
-						}
+				// For each set of anchors (hyperlinks) set the href (link) appropriately
+				let anchors = document.getElementsByTagName('a')
+				for (let i = 0; i < anchors.length; i++) {
+					let anchor = anchors[i]
+					let anchorClasses = anchor.classList
+					if (anchorClasses == null) {
+						continue
+					}
+
+					if (anchorClasses.contains('youtube')) {
+						anchor.href = youtubeLink
+					} else if (anchorClasses.contains('twitch')) {
+						anchor.href = twitchLink
+					} else if (anchorClasses.contains('discord')) {
+						anchor.href = discordLink
+					} else if (anchorClasses.contains('patreon')) {
+						anchor.href = patreonLink
 					}
 				}
-			}, false)
-		</script>
-	</head>
-	
+			}
+		}, false)
+	</script>
+</head>
+
 <body>
-<!--Main Container-->
-<div class="container">
-	<video autoplay muted loop id="bgVideo">
-		<source src="images/Voidspace1080p60.mp4" type="video/mp4">
-	</video>
-	<!--Header (Big image)-->
-	<header>
-		<img src="images/Voidlighter Letters Bright.png" alt="Voidlighter" class="header"/>
-	</header>
-	<!--Description Section-->
-	<div class="description">
-		<h1 class="description">Time for some fun</h1>
-		<p class="description">
-			Role-playing games made with thought and passion to 
-			help you have unforgettable experiences at the table
-		</p>
-	</div>
-	<!--Social Media Section-->
-	<div class="social">
-		<span class="social">
-			<p class="social">
-				The Voidlighter YouTube channel was started to empower GMs to design 
-				compelling experiences for themselves and their players. Whether you're nervous 
-				about running your first game or you're an experienced grognard, this content is for 
-				you.
-			</p>
-		</span>
-		<span class="social-link rounded" id="youtube">
-			<a href="#" class="youtube" title="YouTube">
-				<span class="link-spanner rounded"></span>
-			</a>
-			<h3>WATCH</h3>
-			<img src="images/mediaIcons/YouTubeVoid.png" alt="YouTube" class="social"/>
-		</span>
-		<span class="social-link rounded" id="twitch">
-			<a href="#" class="twitch" title="Twitch">
-				<span class="link-spanner rounded"></span>
-			</a>
-			<h3>FOLLOW</h3>
-			<img src="images/mediaIcons/TwitchVoid.png" alt="Twitch" class="social" />
-		</span>
-		<span class="social-link rounded" id="twitch">
-			<a href="#" class="twitch" title="Twitch">
-				<span class="link-spanner rounded"></span>
-			</a>
-			<h3>JOIN</h3>
-			<img src="images/mediaIcons/DiscordVoid.png" alt="Discord" class="social" />
-		</span>
-		<span class="social-link rounded" id="patreon">
-			<a href="#" class="patreon" title="Patreon">
-				<span class="link-spanner rounded"></span>
-			</a>
-			<h3>SUPPORT</h3>
-			<img src="images/mediaIcons/PatreonVoid.png" alt="Patreon" class="social" />
-		</span>
-	</div>
-	<!--About Section-->
-	<div class="strip about">
-		<span class="strip">
-			<img src="images/WS_Profile_2048px.png" alt="logo" class="strip rounded" />
-		</span>
-		<span class="strip">
-			<h1 class="strip">About Us</h1>
-			<p>
-				For years, Josh wanted to run a narrative-driven RPG campaign that 
-				was grounded, connected and thought-provoking. Eventually, he 
-				realized he would have to design that game himself. He and his team 
-				are excited to bring you games that will change the way you show up at 
-				the table.
-			</p>
-		</span>
-	</div>
-	<!--Projects Section-->
-	<section class="projects">
-		<div class="title">
-			<h2>What we’re working on</h2>
+	<!--Main Container-->
+	<div class="container">
+		<video autoplay muted loop id="bgVideo">
+			<source src="images/Voidspace1080p60.mp4" type="video/mp4">
+		</video>
+		<!--Header (Big image)-->
+		<header>
+			<img src="images/Voidlighter Letters Bright.png" alt="Voidlighter" class="header" />
+		</header>
+		<!--Description Section-->
+		<div class="description">
+			<h4 class="description">
+				Time for some gaming, wholesome fun, a little learning here and there, and we'll figure the rest out as we go.
+			</h4>
 		</div>
-		<div class="strip projects" id="plugsuit">
-			<span class="strip">
-				<img src="images/PS_Logo_512px.png" alt="" class="strip projects rounded"/>
-			</span>
-			<span class="strip">
-				<h1 class="strip">Plugsuit</h1>
-				<p>
-					<i><b>Plugsuit</b></i> is a game about giant robots, dark secrets and terrible 
-					consequences, inspired by <i><b>Neon Genesis Evangelion</b></i> and the SCP 
-					Foundation Wiki. It's also a game about resilience in the face of 
-					trauma. <i><b>Plugsuit</b></i> is Powered By FATE, and uses <i><b>Dread</b></i>-style tower 
-					mechanics. Coming soon to itch.io.
+		<!--Social Media Section-->
+		<div class="social">
+			<span class="social">
+				<p class="social">
+					I chose the name Voidlighter for a couple reasons: For one, “Cade Voidlighter” has a fun ring to it,
+					like a “Luke Skywalker” or something, and I think that's pretty neat. The main reason, though, is
+					more personal to me: I think sometimes as we make our way through life, it looks like an empty void,
+					devoid of hope or trajectory. Even when we *know* this isn't true, it isn't always easy to remember
+					that. Friends are essential to light our path, to show the “void” for what it is. The void of space
+					may appear empty, but it's really just dark. In the light, we might not feel so alone or afraid.
+
+					I want to bring together a positive community of people to spread hope, and light the void. And
+					you're invited.
 				</p>
 			</span>
 		</div>
-	</section>
-	<!--Footer-->
-	<footer>
-		<div class="footer">
-			<p class="footer"><a href="#" class="youtube">Youtube</a></p>
-			<p class="footer"><a href="#" class="twitch">Twitch</a></p>
-			<p class="footer"><a href="#" class="discord">Discord</a></p>
-			<p class="footer"><a href="#" class="patreon">Patreon</a></p>
-			<p class="footer">For business inquiries email <a href="mailto:voidlighters@gmail.com"><b>voidlighter@gmail.com</b></a></p>
-			<hr/>
-			<p id="copyright">Copyright © 2021 Voidlighter. All rights reserved.</p>
+		<!--About Section-->
+		<div class="strip about">
+			<span class="strip">
+				<img src="images/WS_Profile_2048px.png" alt="logo" class="strip rounded" />
+			</span>
+			<span class="strip">
+				<h1 class="strip">About Us</h1>
+				<p>
+					For years, Josh wanted to run a narrative-driven RPG campaign that
+					was grounded, connected and thought-provoking. Eventually, he
+					realized he would have to design that game himself. He and his team
+					are excited to bring you games that will change the way you show up at
+					the table.
+				</p>
+			</span>
 		</div>
-	</footer>
-</div>
+		<!--Projects Section-->
+		<section class="projects">
+			<div class="title">
+				<h2>What we’re working on</h2>
+			</div>
+			<div class="strip projects" id="plugsuit">
+				<span class="strip">
+					<img src="images/PS_Logo_512px.png" alt="" class="strip projects rounded" />
+				</span>
+				<span class="strip">
+					<h1 class="strip">Plugsuit</h1>
+					<p>
+						<i><b>Plugsuit</b></i> is a game about giant robots, dark secrets and terrible
+						consequences, inspired by <i><b>Neon Genesis Evangelion</b></i> and the SCP
+						Foundation Wiki. It's also a game about resilience in the face of
+						trauma. <i><b>Plugsuit</b></i> is Powered By FATE, and uses <i><b>Dread</b></i>-style tower
+						mechanics. Coming soon to itch.io.
+					</p>
+				</span>
+			</div>
+		</section>
+		<!--Footer-->
+		<footer>
+			<div class="footer">
+				<p class="footer"><a href="#" class="youtube">Youtube</a></p>
+				<p class="footer"><a href="#" class="twitch">Twitch</a></p>
+				<p class="footer"><a href="#" class="discord">Discord</a></p>
+				<p class="footer"><a href="#" class="patreon">Patreon</a></p>
+				<p class="footer">For business inquiries email <a
+						href="mailto:voidlighters@gmail.com"><b>voidlighter@gmail.com</b></a></p>
+				<hr />
+				<p id="copyright">Copyright © 2021 Voidlighter. All rights reserved.</p>
+			</div>
+		</footer>
+	</div>
 </body>
+
 </html>
