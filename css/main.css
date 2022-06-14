@@ -40,7 +40,7 @@ section {
 }
 
 div.description {
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0.5);
 }
 
 div.social {
@@ -105,9 +105,9 @@ img {
 
 img.header {
 	opacity: 0.6;
-	width: 50%;
-	margin: 200px auto;
-	max-width: 2560; /* max image size */
+	width: 75%;
+	margin: 200px auto 100px auto;
+	max-width: 1300;
 }
 
 img.social {
