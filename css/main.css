@@ -104,14 +104,14 @@ img {
 }
 
 img.header {
-	opacity: 0.6;
+	opacity: 0.8;
 	width: 75%;
-	margin: 200px auto 100px auto;
+	margin: 10% auto 7% auto;
 	max-width: 1300;
 }
 
 img.social {
-	opacity: 0.6;
+	opacity: 0.9;
 	height: 100%;
 	width: 100%;
 	object-fit: contain;
