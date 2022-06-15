@@ -83,6 +83,7 @@ body::-webkit-scrollbar {
 
 div {
 	padding: 40px;
+	width: 80%;
 	max-width: 1000px;
 	margin: 20px auto;
 	border-radius: 30px;
