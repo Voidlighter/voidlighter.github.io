@@ -1,70 +1,5 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: 'Baloo 2';
-    src: url('../fonts/Baloo2-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Baloo 2';
-    src: url('../fonts/Baloo2-Medium.ttf');
-	font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Baloo 2';
-    src: url('../fonts/Baloo2-Bold.ttf');
-	font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Baloo 2';
-    src: url('../fonts/Baloo2-ExtraBold.ttf');
-	font-weight: 800;
-}
-
-@font-face {
-    font-family: 'Baloo 2';
-    src: url('../fonts/Baloo2-Italic.ttf');
-	font-style: italic;
-}
-
-@font-face {
-    font-family: 'Baloo 2';
-    src: url('../fonts/Baloo2-BoldItalic.ttf');
-	font-weight: bold;
-	font-style: italic;
-}
-
-@font-face {
-    font-family: 'Baloo 2';
-    src: url('../fonts/Baloo2-VariableFont_wght.ttf');
-}
-
-@font-face {
-    font-family: 'Economica';
-    src: url('../fonts/Economica-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Economica';
-    src: url('../fonts/Economica-Bold.ttf');
-	font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Economica';
-    src: url('../fonts/Economica-Italic.ttf');
-	font-style: italic;
-}
-
-@font-face {
-    font-family: 'Economica';
-    src: url('../fonts/Economica-BoldItalic.ttf');
-	font-weight: bold;
-	font-style: italic;
-}
-
 html {
 	--scrollbarBG: rgb(0, 14, 28);
 	--thumbBG: rgb(0, 41, 47);
@@ -278,17 +213,18 @@ h4 {
 	font-family: 'Baloo 2';
 	margin: 0;
 	font-size: 2em;
-	color: rgb(0 182 146 / 70%);
+	color: rgb(0 182 146 / 80%);
+	font-weight: 400;
 }
 
 a {
-	font-weight: bold;
+	font-weight: normal;
 	color: rgb(41, 171, 226);
 	text-decoration: none;
 }
 a.downloads {
 	text-align: center;
-	font-size: 1.35em;
+	font-size: 1em;
 }
 
 h1.description,
@@ -304,6 +240,7 @@ p.social {
 }
 
 p.downloads {
+	font-size: 1.75em;
 	text-align: center;
 	display: inline-block;
 	max-width: 1024px;
