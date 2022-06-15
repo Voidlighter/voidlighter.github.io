@@ -5,9 +5,39 @@
   <title>Minimal Armor by Voidlighter</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo2|Economica">
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
+	<script type="text/javascript" defer>
+		document.addEventListener('readystatechange', event => {
+			if (event.target.readyState === "complete") {
+				// Links to other pages
+				let youtubeLink = "https://www.youtube.com/channel/UC92XQx0aFypeKqib0oJV1bA"
+				let twitchLink = "https://www.twitch.tv/cadevoidlighter"
+				let discordLink = "https://discord.gg/DGYU2UnzXS"
+				let patreonLink = "https://www.patreon.com/voidlighter"
+
+				// For each set of anchors (hyperlinks) set the href (link) appropriately
+				let anchors = document.getElementsByTagName('a')
+				for (let i = 0; i < anchors.length; i++) {
+					let anchor = anchors[i]
+					let anchorClasses = anchor.classList
+					if (anchorClasses == null) {
+						continue
+					}
+
+					if (anchorClasses.contains('youtube')) {
+						anchor.href = youtubeLink
+					} else if (anchorClasses.contains('twitch')) {
+						anchor.href = twitchLink
+					} else if (anchorClasses.contains('discord')) {
+						anchor.href = discordLink
+					} else if (anchorClasses.contains('patreon')) {
+						anchor.href = patreonLink
+					}
+				}
+			}
+		}, false)
+	</script>
   <script type="text/javascript">
     let params = new URLSearchParams(location.search);
     let version = params.get('version');
@@ -22,11 +52,13 @@
       link = ("https://github.com/Voidlighter/MinimalArmor/releases/download/1.17/MinimalArmor-1.17.zip");
     }
     if (version) {
-      setTimeout(function() {
+      setTimeout(function () {
         window.location.assign(link);
       }, 5000);
     }
   </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo2">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Economica">
 </head>
 
 <body>
@@ -42,15 +74,18 @@
     <!--Social Media Section-->
     <div class="social">
       <span class="social">
-        <p id="p1">If the download doesn't start within a couple of seconds, </p>
-        <a id="a1" href="https://github.com/Voidlighter/MinimalArmor/releases">click here</a>
-        <p id="p2">to download the latest version.</p>
+        <p>
+          If the download doesn't start within a couple of seconds,
+          <a id="a1" href="https://github.com/Voidlighter/MinimalArmor/releases">click here</a>
+          to download the latest version.
+        </p>
       </span>
     </div>
     <!--Description Section-->
     <div class="description">
       <h4 class="description">
-        Also check out my recently started YouTube and Twitch channels! You can learn all about them on the discord. Hope you find them and this pack enjoyable!
+        Also check out my recently started YouTube and Twitch channels! You can learn all about them on the discord.
+        Hope you find them and this pack enjoyable!
       </h4>
       <br>
       <span class="social-link rounded" id="youtube">
