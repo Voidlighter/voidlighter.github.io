@@ -225,7 +225,7 @@ h3 {
 	margin: 0;
 	margin-bottom: 10%;
 	font-weight: bold;
-	font-size: 2.5vw;
+	font-size: 2.45em;
 	color: rgb(0 231 255 / 23%);
 }
 
@@ -294,6 +294,9 @@ img.strip {
 @media screen and (max-width: 1140px) {
 	div {
 		max-width: 80%;
+	}
+	h3 {
+		font-size: 2.5vw;
 	}
 	span.strip {
 		margin: 0 3%;
