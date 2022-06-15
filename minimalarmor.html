@@ -52,10 +52,10 @@
       link = ("https://github.com/Voidlighter/MinimalArmor/releases/download/1.17/MinimalArmor-1.17.zip");
     }
     if (version) {
-      let newHTML = `If the download doesn't start within a couple of seconds, ` +
-          `<a class="downloads" href="` + link + `> click here </a> ` +
-          `to download your desired version.`;
-      document.getElementById('redirect').innerHTML = newHTML;
+      // let newHTML = `If the download doesn't start within a couple of seconds, ` +
+      //     `<a class="downloads" href="` + link + `> click here </a> ` +
+      //     `to download your desired version.`;
+      // document.getElementById('redirect').innerHTML = newHTML;
       setTimeout(function () {
         window.location.assign(link);
       }, 5000);
@@ -79,7 +79,7 @@
     <div class="downloads">
       <span class="downloads">
         <p id="redirect" class="downloads">
-          Select your desired version below.
+          If the download doesn't start within a couple of seconds, select your desired version below.
         <br>
         <a href="https://github.com/Voidlighter/MinimalArmor/releases/download/1.19/MinimalArmor-1.19.zip" class="downloads">
           1.19
