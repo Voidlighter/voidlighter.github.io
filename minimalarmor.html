@@ -22,10 +22,9 @@
       link = ("https://github.com/Voidlighter/MinimalArmor/releases/download/1.17/MinimalArmor-1.17.zip");
     }
     if (version) {
-      window.location.assign(link);
-    }
-    else {
-
+      setTimeout(function() {
+        window.location.assign(link);
+      }, 5000);
     }
   </script>
 </head>

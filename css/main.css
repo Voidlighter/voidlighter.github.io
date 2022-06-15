@@ -292,6 +292,9 @@ img.strip {
 }
 
 @media screen and (max-width: 1140px) {
+	div {
+		max-width: 80%;
+	}
 	h3 {
 		font-size: 2.5vw;
 	}
