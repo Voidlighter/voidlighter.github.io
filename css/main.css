@@ -140,7 +140,16 @@ div.social {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
+div.downloads {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 span.social {
+	display: inline-block;
+	min-width: 100%;
+}
+
+span.downloads {
 	display: inline-block;
 	min-width: 100%;
 }
@@ -286,6 +295,11 @@ p.description {
 }
 
 p.social {
+	display: inline-block;
+	max-width: 1024px;
+}
+
+p.downloads {
 	display: inline-block;
 	max-width: 1024px;
 }
