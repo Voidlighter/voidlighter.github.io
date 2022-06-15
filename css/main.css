@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+html {
+	--scrollbarBG: rgb(0, 14, 28);
+	--thumbBG: rgb(0, 41, 47);
+}
+
 * {
 	color: white;
 	text-align: center;
@@ -9,13 +14,36 @@
 /*
 Containers
 */
+
+body::-webkit-scrollbar {
+	width: 11px;
+}
+
 body {
 	background-color: #333;
+	scrollbar-width: thin;
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
-body,.container {
+
+body::-webkit-scrollbar-track {
+	background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: var(--thumbBG);
+	border-radius: 6px;
+	border: 3px solid var(--scrollbarBG);
+}
+
+body,
+.container {
 	margin: 0 !important;
 	padding: 0 !important;
 	align-content: center;
+}
+
+body::-webkit-scrollbar {
+	width: 11px;
 }
 
 .container {
@@ -40,11 +68,11 @@ section {
 }
 
 div.description {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 div.social {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 span.social {
@@ -73,7 +101,7 @@ span.link-spanner {
 }
 
 div.about {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -83,7 +111,7 @@ div.about {
 }
 
 div.projects {
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 div.footer {
@@ -91,7 +119,7 @@ div.footer {
 	margin-top: 150px;
 	padding-left: 5%;
 	padding-right: 5%;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -116,6 +144,7 @@ img.social {
 	width: 100%;
 	object-fit: contain;
 }
+
 #bgVideo {
 	position: fixed;
 	right: 0;
@@ -130,7 +159,7 @@ Text
 */
 p {
 	text-align: left;
-	font-size: 14pt;
+	font-size: 1.35em;
 	font-weight: lighter;
 	margin: 0;
 }
@@ -139,7 +168,8 @@ b {
 	font-weight: bold;
 }
 
-h1,h2 {
+h1,
+h2 {
 	font-family: 'Economica';
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -183,7 +213,8 @@ a {
 	text-decoration: none;
 }
 
-h1.description, p.description {
+h1.description,
+p.description {
 	max-width: 512px;
 	text-align: center;
 	margin: auto;
@@ -235,6 +266,7 @@ img.strip {
 	h3 {
 		display: none;
 	}
+
 	span.strip {
 		margin: 0 3%;
 		max-width: 70%;
@@ -245,12 +277,15 @@ img.strip {
 	div.strip {
 		display: inline-block;
 	}
+
 	span.strip {
 		max-width: none;
 	}
+
 	img.strip {
 		margin: 0 auto;
 	}
+
 	h1.strip {
 		text-align: center;
 	}
