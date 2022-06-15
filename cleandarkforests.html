@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Minimal Armor by Voidlighter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <script type="text/javascript" defer>
+    document.addEventListener('readystatechange', event => {
+      if (event.target.readyState === "complete") {
+        // Links to other pages
+        let youtubeLink = "https://www.youtube.com/channel/UC92XQx0aFypeKqib0oJV1bA"
+        let twitchLink = "https://www.twitch.tv/cadevoidlighter"
+        let discordLink = "https://discord.gg/DGYU2UnzXS"
+        let patreonLink = "https://www.patreon.com/voidlighter"
+
+        // For each set of anchors (hyperlinks) set the href (link) appropriately
+        let anchors = document.getElementsByTagName('a')
+        for (let i = 0; i < anchors.length; i++) {
+          let anchor = anchors[i]
+          let anchorClasses = anchor.classList
+          if (anchorClasses == null) {
+            continue
+          }
+
+          if (anchorClasses.contains('youtube')) {
+            anchor.href = youtubeLink
+          } else if (anchorClasses.contains('twitch')) {
+            anchor.href = twitchLink
+          } else if (anchorClasses.contains('discord')) {
+            anchor.href = discordLink
+          } else if (anchorClasses.contains('patreon')) {
+            anchor.href = patreonLink
+          }
+        }
+      }
+    }, false)
+  </script>
+  <script type="text/javascript">
+    let params = new URLSearchParams(location.search);
+    let version = params.get('version');
+    let link = "";
+    if (version == '1.19') {
+      link = ("https://github.com/Voidlighter/CleanDarkForests/releases/download/1.19/CleanDarkForests1.19.zip");
+    }
+    else if (version == '1.18') {
+      link = ("https://github.com/Voidlighter/CleanDarkForests/releases/download/1.18.2/CleanDarkForests1.18.2.zip");
+    }
+    else if (version == '1.17') {
+      link = ("https://github.com/Voidlighter/CleanDarkForests/releases/download/1.17.1/CleanDarkForests1.17.1.zip");
+    }
+    if (version) {
+      let newHTML = `If the download doesn't start within a couple of seconds, ` +
+          `<a class="downloads" href="` + link + `> click here </a> ` +
+          `to download your desired version.`;
+      document.getElementById('redirect').innerHTML = newHTML;
+      setTimeout(function () {
+        window.location.assign(link);
+      }, 5000);
+    }
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+2">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Economica">
+</head>
+
+<body>
+  <!--Main Container-->
+  <div class="container">
+    <video autoplay muted loop id="bgVideo">
+      <source src="images/Voidspace1080p60.mp4" type="video/mp4">
+    </video>
+    <!--Header (Big image)-->
+    <header>
+      <img src="images/Voidlighter.png" alt="Voidlighter" class="header"/>
+    </header>
+    <!--Social Media Section-->
+    <div class="downloads">
+      <span class="downloads">
+        <p id="redirect" class="downloads">
+          Select your desired version below.
+        <br>
+        <a href="https://github.com/Voidlighter/CleanDarkForests/releases/download/1.19/CleanDarkForests1.19.zip" class="downloads">
+          1.19
+        </a><br>
+        <a href="https://github.com/Voidlighter/CleanDarkForests/releases/download/1.18.2/CleanDarkForests1.18.2.zip" class="downloads">
+          1.18
+        </a><br>
+        <a href="https://github.com/Voidlighter/CleanDarkForests/releases/download/1.17.1/CleanDarkForests1.17.1.zip" class="downloads">
+          1.17
+        </a><br>
+        <a href="https://github.com/Voidlighter/CleanDarkForests/releases" target="_blank" rel="noopener noreferrer" class="downloads">
+          Other
+        </a></p>
+      </span>
+    </div>
+    <!--Description Section-->
+    <div class="description">
+      <h4 class="description">
+        Also check out my recently started YouTube and Twitch channels! You can learn all about them on the discord.
+        Hope you find them and this pack enjoyable!
+      </h4>
+      <br>
+      <span class="social-link rounded" id="youtube">
+        <a href="#" class="youtube" title="YouTube">
+          <span class="link-spanner rounded"></span>
+        </a>
+        <img src="images/mediaIcons/YouTubeVoid.png" alt="YouTube" class="social" />
+        <h3 style="color:rgb(169, 16, 3)">WATCH</h3>
+      </span>
+      <span class="social-link rounded" id="twitch">
+        <a href="#" class="twitch" title="Twitch">
+          <span class="link-spanner rounded"></span>
+        </a>
+        <img src="images/mediaIcons/TwitchVoid.png" alt="Twitch" class="social" />
+        <h3 style="color:rgb(104, 38, 204)">SEE LIVE</h3>
+      </span>
+      <span class="social-link rounded" id="discord">
+        <a href="#" class="discord" title="Discord">
+          <span class="link-spanner rounded"></span>
+        </a>
+        <img src="images/mediaIcons/DiscordVoid.png" alt="Discord" class="social" />
+        <h3 style="color:rgb(50, 63, 192)">JOIN</h3>
+      </span>
+      <span class="social-link rounded" id="patreon">
+        <a href="#" class="patreon" title="Patreon">
+          <span class="link-spanner rounded"></span>
+        </a>
+        <img src="images/mediaIcons/PatreonVoid.png" alt="Patreon" class="social" />
+        <h3 style="color:rgb(179, 10, 70)">SUPPORT</h3>
+      </span>
+    </div>
+    <!--Footer-->
+    <footer>
+      <div class="footer">
+        <p class="footer"><a href="#" class="youtube">Youtube</a></p>
+        <p class="footer"><a href="#" class="twitch">Twitch</a></p>
+        <p class="footer"><a href="#" class="discord">Discord</a></p>
+        <p class="footer"><a href="#" class="patreon">Patreon</a></p>
+        <p class="footer">For business inquiries email <a
+            href="mailto:voidlighters@gmail.com"><b>voidlighter@gmail.com</b></a></p>
+        <hr />
+        <p id="copyright">Copyright © 2021 Voidlighter. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
