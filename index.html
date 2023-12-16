@@ -17,9 +17,10 @@ Original Author: Nickolas Reimschiissel
 		document.addEventListener('readystatechange', event => {
 			if (event.target.readyState === "complete") {
 				// Links to other pages
-				let youtubeLink = "https://www.youtube.com/channel/UC92XQx0aFypeKqib0oJV1bA"
+				let youtubeLink = "https://www.youtube.com/@CadeVoidlighter"
 				let twitchLink = "https://www.twitch.tv/cadevoidlighter"
 				let discordLink = "https://discord.gg/DGYU2UnzXS"
+				let githubLink = "https://github.com/voidlighter"
 				let patreonLink = "https://www.patreon.com/voidlighter"
 
 				// For each set of anchors (hyperlinks) set the href (link) appropriately
@@ -51,9 +52,10 @@ Original Author: Nickolas Reimschiissel
 <body>
 	<!--Main Container-->
 	<div class="container">
-		<video autoplay muted loop id="bgVideo">
+		<img id="bgImage" src="images/background.png" alt="backgroundImage">
+		<!-- <video autoplay muted loop id="bgVideo">
 			<source src="images/Voidspace1080p60.mp4" type="video/mp4">
-		</video>
+		</video> -->
 		<!--Header (Big image)-->
 		<header>
 			<a href="https://voidlighter.ml"><img src="images/Voidlighter.png" alt="Voidlighter" class="header"/></a>
