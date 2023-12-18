@@ -17,9 +17,10 @@ Original Author: Nickolas Reimschiissel
 		document.addEventListener('readystatechange', event => {
 			if (event.target.readyState === "complete") {
 				// Links to other pages
-				let youtubeLink = "https://www.youtube.com/channel/UC92XQx0aFypeKqib0oJV1bA"
+				let youtubeLink = "https://www.youtube.com/@CadeVoidlighter"
 				let twitchLink = "https://www.twitch.tv/cadevoidlighter"
 				let discordLink = "https://discord.gg/DGYU2UnzXS"
+				let githubLink = "https://github.com/voidlighter"
 				let patreonLink = "https://www.patreon.com/voidlighter"
 
 				// For each set of anchors (hyperlinks) set the href (link) appropriately
@@ -51,12 +52,13 @@ Original Author: Nickolas Reimschiissel
 <body>
 	<!--Main Container-->
 	<div class="container">
-		<video autoplay muted loop id="bgVideo">
+		<img id="bgImage" src="images/background.png" alt="backgroundImage">
+		<!-- <video autoplay muted loop id="bgVideo">
 			<source src="images/Voidspace1080p60.mp4" type="video/mp4">
-		</video>
+		</video> -->
 		<!--Header (Big image)-->
 		<header>
-			<a href="https://voidlighter.ml"><img src="images/Voidlighter.png" alt="Voidlighter" class="header"/></a>
+			<a href="https://voidlighter.github.io"><img src="images/VoidlighterLogoGreenLight.png" alt="Voidlighter" class="header"/></a>
 		  </header>
 		<!--Description Section-->
 		<div class="description">
@@ -69,29 +71,29 @@ Original Author: Nickolas Reimschiissel
 				<a href="#" class="youtube" title="YouTube" target="_blank" rel="noopener noreferrer">
 					<span class="link-spanner rounded"></span>
 				</a>
-				<img src="images/mediaIcons/YouTubeVoid.png" alt="YouTube" class="social" />
-				<h3 style="color:rgb(169, 16, 3)">WATCH</h3>
+				<img src="images/mediaIcons/YouTubeCircle.png" alt="YouTube" class="social" />
+				<!-- <h3 style="color:rgb(169, 16, 3)">WATCH</h3> -->
 			</span>
 			<span class="social-link rounded" id="twitch">
 				<a href="#" class="twitch" title="Twitch" target="_blank" rel="noopener noreferrer">
 					<span class="link-spanner rounded"></span>
 				</a>
-				<img src="images/mediaIcons/TwitchVoid.png" alt="Twitch" class="social" />
-				<h3 style="color:rgb(104, 38, 204)">SEE LIVE</h3>
+				<img src="images/mediaIcons/TwitchCircle.png" alt="Twitch" class="social" />
+				<!-- <h3 style="color:rgb(104, 38, 204)">LIVE</h3> -->
 			</span>
 			<span class="social-link rounded" id="discord">
 				<a href="#" class="discord" title="Discord" target="_blank" rel="noopener noreferrer">
 					<span class="link-spanner rounded"></span>
 				</a>
-				<img src="images/mediaIcons/DiscordVoid.png" alt="Discord" class="social" />
-				<h3 style="color:rgb(50, 63, 192)">JOIN</h3>
+				<img src="images/mediaIcons/DiscordCircle.png" alt="Discord" class="social" />
+				<!-- <h3 style="color:rgb(50, 63, 192)">JOIN</h3> -->
 			</span>
 			<span class="social-link rounded" id="patreon">
 				<a href="#" class="patreon" title="Patreon" target="_blank" rel="noopener noreferrer">
 					<span class="link-spanner rounded"></span>
 				</a>
-				<img src="images/mediaIcons/PatreonVoid.png" alt="Patreon" class="social" />
-				<h3 style="color:rgb(179, 10, 70)">SUPPORT</h3>
+				<img src="images/mediaIcons/PatreonCircle.png" alt="Patreon" class="social" />
+				<!-- <h3 style="color:rgb(179, 10, 70)">SUPPORT</h3> -->
 			</span>
 		</div>
 		<!--Social Media Section-->

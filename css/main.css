@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 html {
-	--scrollbarBG: rgb(0, 14, 28);
-	--thumbBG: rgb(0, 41, 47);
+	--scrollbarBG: rgb(0, 97, 194);
+	--thumbBG: rgb(0, 175, 201);
 }
 
 * {
@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-	background-color: #333;
+	background-color: #FFFFFF;
 	scrollbar-width: thin;
 	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
@@ -68,15 +68,15 @@ section {
 }
 
 div.description {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(23, 166, 255, 0.5);
 }
 
 div.social {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(23, 255, 228, 0.5);
 }
 
 div.downloads {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(42, 23, 255, 0.5);
 }
 
 span.social {
@@ -139,7 +139,7 @@ img {
 }
 
 img.header {
-	opacity: 0.8;
+	opacity: 1;
 	width: 75%;
 	margin: 10% auto 7% auto;
 	max-width: 1300;
@@ -154,6 +154,15 @@ img.social {
 }
 
 #bgVideo {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -1;
+}
+
+#bgImage {
 	position: fixed;
 	right: 0;
 	bottom: 0;
@@ -177,7 +186,7 @@ b {
 
 h1,
 h2 {
-	font-family: 'Economica';
+	font-family: 'Baloo 2';
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -199,7 +208,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Economica';
+	font-family: 'Baloo 2';
 	margin: 0;
 	margin-bottom: 10%;
 	font-weight: bold;
@@ -211,8 +220,8 @@ h4 {
 	font-family: 'Baloo 2';
 	margin: 0;
 	font-size: 2em;
-	color: rgb(0 182 146 / 80%);
-	font-weight: 400;
+	color: rgb(255, 255, 255);
+	font-weight: bold
 }
 
 a {
