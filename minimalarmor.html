@@ -7,37 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/main.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
-  <script type="text/javascript" defer>
-    document.addEventListener('readystatechange', event => {
-      if (event.target.readyState === "complete") {
-        // Links to other pages
-        let youtubeLink = "https://www.youtube.com/channel/UC92XQx0aFypeKqib0oJV1bA"
-        let twitchLink = "https://www.twitch.tv/cadevoidlighter"
-        let discordLink = "https://discord.gg/DGYU2UnzXS"
-        let patreonLink = "https://www.patreon.com/voidlighter"
-
-        // For each set of anchors (hyperlinks) set the href (link) appropriately
-        let anchors = document.getElementsByTagName('a')
-        for (let i = 0; i < anchors.length; i++) {
-          let anchor = anchors[i]
-          let anchorClasses = anchor.classList
-          if (anchorClasses == null) {
-            continue
-          }
-
-          if (anchorClasses.contains('youtube')) {
-            anchor.href = youtubeLink
-          } else if (anchorClasses.contains('twitch')) {
-            anchor.href = twitchLink
-          } else if (anchorClasses.contains('discord')) {
-            anchor.href = discordLink
-          } else if (anchorClasses.contains('patreon')) {
-            anchor.href = patreonLink
-          }
-        }
-      }
-    }, false)
-  </script>
   <script type="text/javascript">
     let params = new URLSearchParams(location.search);
     let version = params.get('version');
@@ -68,13 +37,12 @@
 <body>
   <!--Main Container-->
   <div class="container">
-    <video autoplay muted loop id="bgVideo">
-      <source src="images/Voidspace1080p60.mp4" type="video/mp4">
-    </video>
-    <!--Header (Big image)-->
-    <header>
-      <a href="https://voidlighter.ml"><img src="images/Voidlighter.png" alt="Voidlighter" class="header"/></a>
-    </header>
+		<img id="bgImage" src="images/background.png" alt="backgroundImage">
+		<!--Header (Big image)-->
+		<header>
+			<a href="https://voidlighter.github.io"><img src="images/VoidlighterLogoGreenLight.png" alt="Voidlighter"
+					class="header" /></a>
+		</header>
     <!--Social Media Section-->
     <div class="downloads">
       <span class="downloads">
