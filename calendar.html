@@ -4,6 +4,9 @@
 
 <head>
   <title>Voidlighter's Streaming Schedule</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
   <style>
     iframe#calendar {
       height: 100vh;
@@ -11,21 +14,28 @@
     }
   </style>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.7/jstz.js"></script>
-  <script type="text/javascript">
-    var timezone = jstz.determine();
-    var pref = '<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=';
-    var suff = '&showTz=1&mode=WEEK&src=dm9pZGxpZ2h0ZXJAZ21haWwuY29t&color=%238E24AA" id="calendar" style="border-width:0" frameborder="0" scrolling="no"></iframe>';
-    var iframe_html = pref + timezone.name() + suff;
-    document.getElementById('calendar-container').innerHTML = iframe_html;
-  </script>
 </head>
 
 <body>
-  <div id="calendar-container"></div>
-  <!-- <iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=somecalendaridentifier%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  <img id="bgImage" src="images/background.png" alt="backgroundImage">
+  <div>
+    <span>
+      <p id="timezone-text">Times are in MT.</p>
+    </span>
+  </div>
+  <!-- <iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=somecalendaridentifier%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+  <div id="calendar-container">
   <iframe id="calendar"
     src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FDenver&showTz=1&mode=WEEK&src=dm9pZGxpZ2h0ZXJAZ21haWwuY29t&color=%238E24AA"
-    style="border-width:0" frameborder="0" scrolling="no"></iframe> -->
+    style="border-width:0" frameborder="0" scrolling="no"></iframe>
+  </div>
 </body>
-
+<script type="text/javascript">
+  var timezone = jstz.determine().name();
+  var pref = '<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=';
+  var suff = '&showTz=1&mode=WEEK&src=dm9pZGxpZ2h0ZXJAZ21haWwuY29t&color=%238E24AA" id="calendar" style="border-width:0" frameborder="0" scrolling="no"></iframe>';
+  var iframe_html = pref + encodeURIComponent(timezone) + suff;
+  document.getElementById('calendar-container').innerHTML = iframe_html;
+  document.getElementById('timezone-text').innerHTML = 'Times are in ' + timezone + '.';
+</script>
 </html>
