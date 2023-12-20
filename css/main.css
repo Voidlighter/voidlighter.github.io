@@ -162,7 +162,7 @@ img.social {
 	z-index: -1;
 }
 
-#bgImage {
+.bgImage {
 	position: fixed;
 	right: 0;
 	bottom: 0;
