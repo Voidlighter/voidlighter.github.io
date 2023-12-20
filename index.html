@@ -58,8 +58,7 @@ Original Author: Nickolas Reimschiissel
 	<div class="container">
 		<!-- <div id="bgImage" class="bgImage"><img src="images/common-background.png" alt="backgroundImage" class="bgImage"></div> -->
 		<!--Header (Big image)-->
-		<header id="common-header">
-		</header>
+		<header id="common-header"></header>
 		<!--Description Section-->
 		<div class="description">
 			<h4 class="description">
@@ -125,11 +124,10 @@ Original Author: Nickolas Reimschiissel
 			</span>
 		</div>
 		<!--Footer-->
-		<footer id="common-footer">
-		</footer>
+		<footer id="common-footer"></footer>
 	</div>
 </body>
-<script>
+<!-- <script>
 	window.addEventListener('DOMContentLoaded', (event) => {
     fetch('common-header.html')
         .then(response => {
@@ -150,8 +148,8 @@ Original Author: Nickolas Reimschiissel
             console.error('There has been a problem with your fetch operation:', error);
         });
 });
-</script>
-<!-- <script>
+</script> -->
+<script>
 	window.addEventListener('DOMContentLoaded', (event) => {
     fetch('common-header.html')
 		.then(response => response.text())
@@ -164,5 +162,5 @@ Original Author: Nickolas Reimschiissel
 			document.getElementById('common-footer').innerHTML = data;
         });
 	});
-</script> -->
+</script>
 </html>
