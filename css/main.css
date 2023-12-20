@@ -3,6 +3,7 @@
 html {
 	--scrollbarBG: rgb(0, 97, 194);
 	--thumbBG: rgb(0, 175, 201);
+	--gradientBG: linear-gradient(to bottom, #90e5c4, #2cd29d, #3586cd);
 }
 
 * {
@@ -20,9 +21,10 @@ body::-webkit-scrollbar {
 }
 
 body {
-	background-color: #FFFFFF;
 	scrollbar-width: thin;
-	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+	scrollbar-color: var(--thumbBG) var(--gradientBG);
+	background: var(--gradientBG);
+	background-attachment: fixed;
 }
 
 body::-webkit-scrollbar-track {
